@@ -22,13 +22,14 @@ class FreshSerive:
 
 
 def all_tickets() -> dict:
-    """
-    Get all tickets.
+    """Get all tickets.
 
-    :return:
+    :return: Dict that contains a list of all the tickets.
     """
+
     url = "/tickets"
     tickets = FreshSerive(url).get_data().json()
+
     return tickets
 
 
